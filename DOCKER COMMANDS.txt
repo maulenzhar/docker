@@ -77,3 +77,14 @@ Kill and Delete Containers and Images
 docker rm -f $(docker ps -aq)        # Delete all Containers
 docker rmi -f $(docker images -q)    # Delete all Images
 
+
+===================MYSQL====================
+docker pull mysql/mysql-server:latest
+docker images
+docker run --name=mysql -d mysql/mysql-server:latest
+docker logs mysql - найти пассворд root
+docker exec -it mysql  mysql -uroot -p
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '[newpassword]';
+
+===================END-MYSQL================
+

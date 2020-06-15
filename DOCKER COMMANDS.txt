@@ -86,5 +86,6 @@ docker logs mysql - найти пассворд root
 docker exec -it mysql  mysql -uroot -p
 mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '[newpassword]';
 
+docker exec -it bgbilling_db.1.q4zm1zxscuaoyk7engqp5r34h bash
 ===================END-MYSQL================
 
